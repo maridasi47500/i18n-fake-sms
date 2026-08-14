@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 
+{% block montitre %}
+debut de mes mots: bienvenue dans fake sms
+{% endblock %}
 {% block content %}
 <h1># i18n-fake-sms</h1>
 {% for x in users | reverse %}
  <li>{{ x["first_name"]  }}</li>
 
 {% endfor %} 
+fin de mes mots : envoyer une  fake ,carte postale fake email, sms, spoof message
 {% endblock %}
 {% block liens %}
 <a href="/">welcome</a>
-<a href="/add_one_sms"> add one sms</a><a href="/add_one_place"> add one place</a>
 {% endblock %}
-
+<a href="/add_one_language"> add one language</a><a href="/add_one_user"> add one user</a><a href="/add_one_place"> add one place</a><a href="/add_one_postcard"> add one postcard</a><a href="/add_one_letter"> add one letter</a><a href="/add_one_email"> add one email</a><a href="/add_one_sms"> add one sms</a><a href="/add_one_calendar_entry"> add one calendar_entry</a>
